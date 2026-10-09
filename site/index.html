@@ -1,0 +1,39 @@
+<!doctype html><html lang="en" class="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Preview how filenames could be organized. No uploads or file changes. Download a dry-run-first Python organizer."><title>File Organizer - a little less clutter</title><link rel="stylesheet" href="style.css"></head><body><main><header><span class="brand">FILE ORGANIZER <small>BY DIPAN NAMA</small></span><button id="theme" aria-label="Switch color theme"><!-- @license lucide-static v1.52.0 - ISC -->
+<svg class="icon"
+  class="lucide lucide-moon"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" />
+</svg>
+</button></header><section class="intro"><span class="badge">PREVIEW FIRST. MOVE LATER.</span><h1>A little less clutter.</h1><p>See where your filenames belong before changing anything.<br>No uploads. No file access. Just a clear plan.</p></section><section class="layout"><div class="frame"><form class="inner" id="form"><span class="eyebrow">01 / YOUR FILE LIST</span><h2>Start with the names.</h2><label class="title" for="names">One filename per line</label><textarea id="names" maxlength="20000" placeholder="holiday.jpg&#10;invoice.pdf&#10;app.tsx" spellcheck="false">holiday.jpg
+invoice.pdf
+app.tsx
+playlist.mp3
+backup.zip
+notes.txt
+holiday.jpg
+LICENSE</textarea><button class="primary" type="submit">Preview organization <span class="arrow"><!-- @license lucide-static v1.52.0 - ISC -->
+<svg class="icon"
+  class="lucide lucide-arrow-up-right"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M7 7h10v10" />
+  <path d="M7 17 17 7" />
+</svg>
+</span></button><div class="small-actions"><button type="button" id="sample">Load example</button><button type="button" id="clear">Clear list</button></div><p style="font-size:10px;margin-bottom:0">Up to 200 names. Filenames only, no paths. Existing destination files cannot be checked here.</p></form></div><div><div class="result-head"><div><span class="eyebrow" id="count">0 FILES PLANNED</span><h2>A place for everything.</h2></div><div class="export-actions"><button id="copy">Copy plan</button><button id="export">Export JSON</button></div></div><div class="summary" id="summary"></div><div class="result-area"><div class="tablewrap"><table><thead><tr><th scope="col">FILENAME</th><th scope="col">PLANNED DESTINATION</th></tr></thead><tbody id="rows"></tbody></table></div><div class="status" id="status" role="status" aria-live="polite">Preview your list to see a plan. Nothing on your computer will change.</div></div></div></section><section class="notes"><div><strong>Six simple categories</strong><p>Images, documents, media, archives, code and others. Extensions are checked without reading any file contents.</p></div><div><strong>No silent replacements</strong><p>Duplicate names in this list get numbered. The Python tool checks real destinations and refuses overwrites.</p></div><div><strong>A plan, not a file manager</strong><p>The browser exports JSON only. The downloadable CLI previews by default; use --apply only after reviewing and backing up.</p></div></section><section class="bottom"><p><code>python3 organizer.py /path/to/folder</code><br>Dry run by default. Works on regular root files only; skips hidden files, folders and symlinks. Use in a trusted folder, not alongside other writers.</p><a class="download" href="organizer.py" download>Download Python CLI</a></section><div class="divider"></div><footer><span>Built by Dipan Nama. Theme only is saved in this browser.</span><a href="https://github.com/DipanNama/file_organizer" target="_blank" rel="noopener noreferrer">Source & instructions</a></footer></main><script src="groups.js"></script><script src="planner.js"></script><script src="app.js"></script></body></html>

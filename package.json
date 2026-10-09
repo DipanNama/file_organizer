@@ -1,0 +1,1 @@
+{"name":"file-organizer","version":"1.0.0","private":true,"scripts":{"test":"python3 -m unittest -v test_organizer.py && node --test planner.test.cjs","build":"node build.cjs"}}

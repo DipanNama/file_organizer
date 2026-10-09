@@ -1,0 +1,1 @@
+const fs=require('node:fs');fs.rmSync('dist',{recursive:true,force:true});fs.cpSync('site','dist',{recursive:true});fs.copyFileSync('main.py','dist/organizer.py');fs.writeFileSync('dist/.nojekyll','');console.log('Static filename planner and CLI download built');
