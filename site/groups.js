@@ -1,0 +1,2 @@
+const FILE_GROUPS={"Images": [".gif", ".heic", ".ico", ".jpeg", ".jpg", ".png", ".svg", ".webp"], "Docs": [".csv", ".doc", ".docx", ".md", ".pdf", ".pptx", ".txt", ".xlsx"], "Media": [".flv", ".mkv", ".mov", ".mp3", ".mp4", ".ogg", ".wav"], "Archives": [".7z", ".gz", ".rar", ".tar", ".zip"], "Code": [".asm", ".c", ".cpp", ".css", ".html", ".js", ".json", ".jsx", ".php", ".py", ".rb", ".ts", ".tsx", ".xml", ".yaml", ".yml"]};
+if(typeof module!=="undefined")module.exports=FILE_GROUPS;
